@@ -1,0 +1,122 @@
+body {
+  background-color: #1a1a2e;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  padding: 60px 20px;
+}
+ 
+.ticket {
+  width: 580px;
+  margin: 0 auto;
+  background-color: #0f0f0f;
+  border: 3px solid #c9a84c;
+  border-radius: 12px;
+}
+ 
+/* PARTE IZQUIERDA */
+.ticket-left {
+  background-color: #111111;
+  padding: 36px 32px;
+}
+ 
+.label-keep {
+  color: #c9a84c;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0 0 6px 0;
+}
+ 
+.event-name {
+  color: #c9a84c;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin: 0 0 4px 0;
+}
+ 
+.label-sub {
+  color: #888;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0 0 24px 0;
+}
+ 
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+ 
+.info-table td {
+  color: #cccccc;
+  font-size: 13px;
+  padding: 6px 8px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+ 
+.info-table td:first-child {
+  color: #c9a84c;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 80px;
+}
+ 
+/* LÍNEA PUNTEADA */
+.divider {
+  border: none;
+  border-top: 2px dashed #c9a84c;
+  margin: 0;
+  opacity: 0.5;
+}
+ 
+/* PARTE DERECHA */
+.ticket-right {
+  background-color: #c9a84c;
+  padding: 24px 32px;
+}
+ 
+.ticket-number-label {
+  color: #1a1a1a;
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0 0 4px 0;
+}
+ 
+.ticket-number {
+  color: #111111;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin: 0 0 16px 0;
+}
+ 
+/* CÓDIGO DE BARRAS */
+.barcode {
+  margin: 0 auto 12px auto;
+  width: fit-content;
+  line-height: 1;
+}
+ 
+.barcode span {
+  background-color: #111111;
+  width: 3px;
+  height: 48px;
+  margin: 0 1px;
+  display: inline-block;
+}
+ 
+.barcode span.thin  { width: 1px; opacity: 0.7; }
+.barcode span.thick { width: 4px; }
+.barcode span.gap   { width: 5px; background: transparent; }
+ 
+.barcode-num {
+  color: #111111;
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin: 4px 0 0 0;
+} 
