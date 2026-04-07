@@ -37,6 +37,7 @@
     color: var(--blanco);
     font-family: 'Syne', sans-serif;
     font-weight: 800;
+    text-align: left;
 }
 
 .menu > div:nth-child(3) {
@@ -71,7 +72,7 @@
 
 .bloque1 {
     width: 100%;
-    padding: 60px 5%;
+    padding: 40px 5%;
     overflow: hidden;
 }
 
@@ -251,7 +252,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .car {
         min-height: 460px;
     }
@@ -264,10 +265,10 @@
     }
 
     .bloque1 .informacion {
-        float: right;
-        width: 48%;
+        float: left;
+        width: 55%;
         text-align: left;
-        padding-top: 30px;
+        padding-top: 45px;
     }
 
     .bloque1::after {
@@ -297,3 +298,4 @@
     display: table;
     clear: both;
 }
+
