@@ -1,0 +1,299 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --naranja: rgb(255, 123, 0);
+    --naranjaro: orangered;
+    --oscuro: rgb(54, 54, 54);
+    --gris: rgb(99, 98, 98);
+    --gris-claro: darkgrey;
+    --blanco: #ffffff;
+}
+
+.container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.menu {
+    background-color: var(--oscuro);
+    width: 100%;
+    padding: 15px 2%;
+    overflow: hidden;
+}
+
+.menu > div:first-child {
+    float: left;
+    width: 60px;
+}
+
+.t {
+    float: left;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: var(--blanco);
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+}
+
+.menu > div:nth-child(3) {
+    float: left;
+    width: calc(100% - 420px);
+}
+
+.T1 {
+    float: right;
+    padding: 10px 20px;
+    color: var(--blanco);
+    text-align: right;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.T2 {
+    float: right;
+    padding: 10px 20px;
+    color: var(--gris-claro);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.menu::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bloque1 {
+    width: 100%;
+    padding: 60px 5%;
+    overflow: hidden;
+}
+
+.foto {
+    width: 100%;
+    text-align: center;
+}
+
+.foto1 {
+    width: 80%;
+    max-width: 420px;
+    aspect-ratio: 1 / 1;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/006/599/317/non_2x/young-boy-panic-working-on-laptop-computer-illustration-pro-download-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.informacion {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--oscuro);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: clamp(1.6rem, 5vw, 2.8rem);
+    color: var(--naranjaro);
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+}
+
+.boton {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    border-radius: 5px;
+    width: fit-content;
+    padding: 12px 28px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin: 20px auto 0;
+}
+
+.bloque2 {
+    background-color: var(--naranjaro);
+    width: 100%;
+    padding: 40px 5% 60px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.fotito {
+    width: clamp(130px, 28%, 260px);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-image: url("https://img.freepik.com/vector-gratis/ilustracion-joven-sonriente_1308-174669.jpg?semt=ais_incoming&w=740&q=80");
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 30px;
+}
+
+.texto1 {
+    max-width: 85%;
+    color: var(--blanco);
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.texto1 h1 {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: 400;
+}
+
+.bloque3 {
+    width: 100%;
+    padding: 50px 4%;
+    overflow: hidden;
+}
+
+.t3 {
+    color: var(--gris);
+    text-align: center;
+    font-size: clamp(1.3rem, 4vw, 2.2rem);
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin-bottom: 40px;
+}
+
+.cartas {
+    width: 100%;
+    overflow: hidden;
+}
+
+.car {
+    border: 1px solid var(--gris-claro);
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 25px;
+    overflow: hidden;
+    background-color: white;
+    min-height: 480px;
+    float: left;
+}
+
+.car > div:last-child {
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.car h1 {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.car h3 {
+    font-size: clamp(0.8rem, 2vw, 0.95rem);
+    font-weight: 400;
+    color: var(--gris);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.img1, .img2, .img3, .img4 {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.img1 { background-image: url("https://gestioneducativa.educaweb.com/wp-content/uploads/2016/04/Ejemplos-de-proyectos-educativos-850x553.jpg"); }
+.img2 { background-image: url("https://www.ceupe.com.ve/images/easyblog_articles/230/ges_proyec.png"); }
+.img3 { background-image: url("https://www.isdi.education/es/wp-content/uploads/2024/05/seguimiento-de-proyectos.webp"); }
+.img4 { background-image: url("https://www.obsbusiness.school/sites/obsbusiness.school/files/images/tipos%20de%20proyectos-min_0.jpg"); }
+
+.boton2 {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    border-radius: 5px;
+    width: 85%;
+    max-width: 200px;
+    padding: 12px 10px;
+    margin: 15px auto 0;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    display: block;
+}
+
+.boton2 h4 {
+    font-size: clamp(0.8rem, 2vw, 0.95rem);
+}
+
+.derechos {
+    background-color: var(--oscuro);
+    width: 100%;
+    padding: 20px 5%;
+    color: var(--gris);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    text-align: center;
+    min-height: 60px;
+}
+
+
+@media (max-width: 767px) {
+    .car {
+        min-height: 460px;
+    }
+}
+
+@media (min-width: 768px) {
+    .bloque1 .foto {
+        float: left;
+        width: 48%;
+    }
+
+    .bloque1 .informacion {
+        float: right;
+        width: 48%;
+        text-align: left;
+        padding-top: 30px;
+    }
+
+    .bloque1::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .car {
+        width: 48%;
+        margin: 0 1% 30px;
+        min-height: 490px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .car {
+        width: 23.5%;        
+        margin: 0 0.75% 30px;
+        min-height: 500px;
+    }
+}
+
+.cartas::after,
+.bloque1::after {
+    content: "";
+    display: table;
+    clear: both;
+}
