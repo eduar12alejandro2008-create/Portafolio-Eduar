@@ -64,11 +64,6 @@
     font-size: 0.9rem;
 }
 
-.menu::after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 .bloque1 {
     width: 100%;
@@ -271,11 +266,6 @@
         padding-top: 45px;
     }
 
-    .bloque1::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
 
     .car {
         width: 48%;
@@ -292,10 +282,4 @@
     }
 }
 
-.cartas::after,
-.bloque1::after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
