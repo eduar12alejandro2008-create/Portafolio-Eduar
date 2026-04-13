@@ -1,0 +1,103 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+    padding: 40px 0;
+}
+
+.hojita{
+width: 794px;
+height: 1123px;
+background-color: white;
+margin: auto;
+padding: 60px;
+box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+}
+
+.datos{
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-radius: 1px solid;
+}
+.izquierda{
+    float: left;
+    width: 50%;
+}
+.derecha{
+    float: right;
+    width: 45%;
+    text-align: right;
+}
+
+.izquierda h3{
+    font-size: 1.3rem;
+    margin: 6px 0;
+}
+.izquierda p{
+    font-size: 0.82rem;
+    color: black;
+    margin-bottom: 20px;
+}
+.tabla{
+    width: 100%;
+    margin-top: 20px;
+}.cabeza{
+    background-color: rgb(255, 145, 0);
+    overflow-x: hidden;
+}
+
+.cabeza div{
+    float: left;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    padding: 10px 12px;
+    font-size: 0.78rem;
+}
+.fila{
+    overflow: hidden;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.fila div{
+    float: left;
+    padding: 10px 12px;
+    font-size: 0.82rem;
+    color: #444;
+}
+.cabeza div:nth-child(1), .fila div:nth-child(1) { width: 18%; } 
+.cabeza div:nth-child(2), .fila div:nth-child(2) { width: 40%; } 
+.cabeza div:nth-child(3), .fila div:nth-child(3) { width: 14%; } 
+.cabeza div:nth-child(4), .fila div:nth-child(4) { width: 10%; } 
+.cabeza div:nth-child(5), .fila div:nth-child(5) { width: 18%; }
+
+.totales {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.totales td {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.totales td:last-child {
+    text-align: right;  
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.total-final td {
+    background-color: #e87c1e;
+    color: white;
+    font-weight: 700;
+    padding: 10px 12px;
+}
+.total-final td:last-child {
+    color: white;
+}
