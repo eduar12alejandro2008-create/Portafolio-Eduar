@@ -77,14 +77,18 @@
 }
 
 .foto1 {
-    width: 80%;
-    max-width: 420px;
+    width: 500px;
+    height: 500px;
     aspect-ratio: 1 / 1;
     background-image: url("https://static.vecteezy.com/system/resources/previews/006/599/317/non_2x/young-boy-panic-working-on-laptop-computer-illustration-pro-download-vector.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: 20px;
+    
+
+    
 }
 
 .informacion {
@@ -278,6 +282,12 @@
     .car {
         width: 23.5%;        
         margin: 0 0.75% 30px;
+        min-height: 500px;
+    }
+}
+
+
+
         min-height: 500px;
     }
 }
