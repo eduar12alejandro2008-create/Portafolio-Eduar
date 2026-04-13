@@ -183,20 +183,21 @@
     margin-bottom: 25px;
     overflow: hidden;
     background-color: white;
-    min-height: 480px;
+  
     float: left;
 }
 
 .car > div:last-child {
     padding: 20px 15px;
     text-align: center;
+    min-height: 220px;
 }
 
 .car h1 {
     font-size: clamp(1rem, 2.5vw, 1.25rem);
     font-family: 'Syne', sans-serif;
     font-weight: 700;
-    margin-bottom: 12px;
+    
 }
 
 .car h3 {
@@ -205,6 +206,8 @@
     color: var(--gris);
     line-height: 1.5;
     margin-bottom: 20px;
+    height: 90px;
+    overflow: hidden;
 }
 
 .img1, .img2, .img3, .img4 {
@@ -252,9 +255,7 @@
 
 
 @media (max-width: 768px) {
-    .car {
-        min-height: 460px;
-    }
+   
 }
 
 @media (min-width: 768px) {
@@ -274,7 +275,7 @@
     .car {
         width: 48%;
         margin: 0 1% 30px;
-        min-height: 490px;
+       
     }
 }
 
@@ -282,9 +283,12 @@
     .car {
         width: 23.5%;        
         margin: 0 0.75% 30px;
-        min-height: 500px;
+        
     }
 }
+
+
+
 
 
 
