@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.18.1/axios.js"></script>
+    <title>Presentacion</title>
+    <link rel="stylesheet" href="./style.CSS">
+</head>
+<body>
+
+<div class="caja">
+
+<div izq>
+    <img id="perfil" alt="">
+</div>
+
+
+<div class="tex">
+    <h1 id="nombre"></h1>
+    <h1 id="apellido"></h1>
+    <p>Email: <span id="email"></span></p>
+    <p>Teléfono: <span id="telefono"></span></p>
+    <p>Celular: <span id="celular"></span></p>
+    <p>Género: <span id="genero"></span></p>
+    <p>Usuario: <span id="usuario"></span></p>
+    <p>Edad: <span id="edad"></span></p>
+    <p>Fecha de nacimiento: <span id="fechaNacimiento"></span></p>
+    <p>Nacionalidad: <span id="nacionalidad"></span></p>
+    <p>País: <span id="pais"></span></p>
+    <p>Ciudad: <span id="ciudad"></span></p>
+    <p>Dirección: <span id="direccion"></span></p>
+    <p>Código Postal: <span id="codigoPostal"></span></p>
+</div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", async()=>{
+        let res = await axios.get("https://randomuser.me/api/")
+        console.log(res);
+
+        let perfil = document.getElementById("perfil")
+        perfil.src = res.data.results[0].picture.large
+
+        let nombre = document.getElementById("nombre")
+        nombre.textContent = res.data.results[0].name.first
+
+        let apellido = document.getElementById("apellido")
+        apellido.textContent = res.data.results[0].name.last
+
+        let email = document.getElementById("email")
+        email.textContent = res.data.results[0].email
+
+        let telefono = document.getElementById("telefono")
+        telefono.textContent = res.data.results[0].phone
+
+        let celular = document.getElementById("celular")
+        celular.textContent = res.data.results[0].cell
+
+        let genero = document.getElementById("genero")
+        genero.textContent = res.data.results[0].gender
+
+        let usuario = document.getElementById("usuario")
+        usuario.textContent = res.data.results[0].login.username
+
+        let edad = document.getElementById("edad")
+        edad.textContent = res.data.results[0].dob.age
+
+       let fecha = document.getElementById("fechaNacimiento");
+            let fechaApi = new Date(res.data.results[0].dob.date)
+            fecha.textContent = fechaApi.toLocaleDateString("es-CO")
+       
+        let nacionalidad = document.getElementById("nacionalidad")
+        nacionalidad.textContent = res.data.results[0].nat
+
+        let pais = document.getElementById("pais")
+        pais.textContent = res.data.results[0].location.country
+
+        let ciudad = document.getElementById("ciudad")
+        ciudad.textContent = res.data.results[0].location.city
+
+        let direccion = document.getElementById("direccion")
+        direccion.textContent = res.data.results[0].location.street.name + " " + res.data.results[0].location.street.number
+
+        let codigoPostal = document.getElementById("codigoPostal")
+        codigoPostal.textContent = res.data.results[0].location.postcode
+    })
+</script>
+   
+</body>
+</html>
